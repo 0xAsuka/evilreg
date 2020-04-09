@@ -175,6 +175,10 @@ url="${url:-${default_url}}"
 
 start() {
 
+if [[ -e ip.txt ]]; then
+rm -f ip.txt
+fi
+
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok.io:\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Custom (localhost/WAN):\e[0m\n"
