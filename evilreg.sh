@@ -234,7 +234,7 @@ catch_ip() {
 
 ip=$(grep -a 'IP:' ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
-device=$(grep -o 'User-Agent:.*' saved.ip.txt | cut -d ":" -f2)
+device=$(grep -o 'User-Agent:.*' ip.txt | cut -d ":" -f2)
 printf "\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] IP:\e[0m\e[1;77m %s\e[0m\n" $ip
 printf "\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] User-Agent:\e[0m\e[1;77m %s\e[0m\n" $device
 cat ip.txt >> saved.ip.txt
