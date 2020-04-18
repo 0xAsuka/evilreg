@@ -1,5 +1,5 @@
 #!/bin/bash
-# evilreg v1.0
+# evilreg v1.0.1
 # coded by: @linux_choice (twitter)
 # github.com/thelinuxchoice/evilreg
 # If you use any part from this code, giving me the credits. Read the License!
@@ -16,7 +16,7 @@ printf "\e[1;91m |        \ /  /|  |  |\e[93m_|  | \/\  ___// /_/  > \e[0m\n"
 printf "\e[1;91m/_______  / \_/ |__|____/\e[93m__|    \___  >___  /  \e[0m\n"
 printf "\e[1;91m        \/               \e[93m           \/_____/    \e[0m\n"
 
-printf " \e[1;77mv1.0 coded by @linux_choice\n"
+printf " \e[1;77mv1.0.1 coded by @linux_choice\n"
 printf " \e[1;77mgithub.com/thelinuxchoice/evilreg\e[0m\n"
 printf "\n"
 
@@ -250,7 +250,7 @@ listener() {
 if [[ $forward == true ]];then
 printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m]\e[1;91m Expose the server with command: \e[0m\n"
 printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m]\e[0m\e[93m ssh -R 80:localhost:3333 custom-subdomain@ssh.localhost.run \e[0m\n"
-printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m]\e[0m\e[92m Send the HTTP link instead HTTPS to automatically download reg file \e[0m\n"
+#printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m]\e[0m\e[92m Send the HTTP link instead HTTPS to automatically download reg file \e[0m\n"
 
 printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m]\e[1;91m Target must reboot/logout after installing reg file\e[0m\e[1;77m\n"
 checkfound
